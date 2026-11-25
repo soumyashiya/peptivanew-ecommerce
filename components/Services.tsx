@@ -64,7 +64,7 @@ export default function Services() {
       <div ref={scope}>
         <div className="shell">
           <h2 data-reveal className="heading-caps">
-            Why our compounds hold up
+            Why Peptiva Labs compounds hold up
           </h2>
         </div>
 

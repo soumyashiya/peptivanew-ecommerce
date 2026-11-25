@@ -43,7 +43,7 @@ export default function Features() {
           data-reveal
           className="mx-auto max-w-[24ch] text-center text-[clamp(28px,3.2vw,40px)] font-bold uppercase leading-[1.4] tracking-[0.025em] text-black"
         >
-          Tested and trusted by labs and researchers
+          Peptiva Labs, tested and trusted by researchers
         </h2>
 
         <div

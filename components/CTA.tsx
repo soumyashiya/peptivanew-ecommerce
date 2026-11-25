@@ -60,7 +60,7 @@ export default function CTA() {
           <div className="relative grid lg:h-[500px] lg:grid-cols-2">
             <div className="flex flex-col justify-center px-6 pb-10 pt-8 sm:px-12 lg:col-start-2 lg:py-0 lg:pl-[40px] lg:pr-[60px]">
               <h2 className="max-w-[660px] text-[clamp(26px,3vw,40px)] font-bold uppercase leading-[1.4] tracking-caps text-black">
-                Save up to 15% on multi&#8209;kit research orders
+                Save up to 15% on Peptiva Labs multi&#8209;kit orders
               </h2>
               <p className="mt-5 max-w-[580px] text-[clamp(17px,1.6vw,22px)] leading-[1.8] text-black">
                 Researchers pair compounds across a study — volume pricing is

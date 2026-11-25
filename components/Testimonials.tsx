@@ -45,7 +45,7 @@ export default function Testimonials() {
         <div data-reveal className="rounded-[30px] bg-grad-routine pb-10 pt-12 sm:pb-14 sm:pt-[55px] lg:rounded-[40px]">
           <div className="px-6 text-center sm:px-10">
             <h2 className="text-[clamp(28px,3.4vw,50px)] font-bold leading-[1.3] text-black">
-              Join the labs who verify before they buy
+              Join the labs who verify with Peptiva Labs
             </h2>
             <p className="mt-8 text-base italic text-black sm:text-[20px]">
               Verified customer reviews

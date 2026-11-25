@@ -29,7 +29,7 @@ const posterFor = (video: string) =>
   video.replace("/videos/", "/videos/posters/").replace(".mp4", ".jpg");
 
 export default function CommunityStrip({
-  title = "Loved by our",
+  title = "Loved by the Peptiva Labs",
   background = "bg-white",
   sentenceCase = false,
 }: {

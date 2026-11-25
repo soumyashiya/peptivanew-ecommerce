@@ -190,7 +190,7 @@ export default function ScienceView() {
       {/* ---- 1. results list ---------------------------------------- */}
       <section className="mx-auto w-full max-w-[1000px] px-4 lg:px-0">
         <h1 className="text-[clamp(24px,2.4vw,32px)] font-normal leading-snug text-black">
-          Results backed by independent analysis
+          Peptiva Labs results, backed by independent analysis
         </h1>
         <p className="mt-1 text-[clamp(18px,1.8vw,26px)] font-light text-grey-700">
           Select a compound and view its lab results:
@@ -225,7 +225,7 @@ export default function ScienceView() {
       {/* ---- 3. quotes ------------------------------------------------ */}
       <section className="mx-auto mt-28 w-full max-w-[1190px] px-4 lg:px-6">
         <h2 className="mb-12 text-center text-[clamp(28px,3vw,46px)] font-normal text-black">
-          Don&apos;t just take our word for it.
+          Don&apos;t just take Peptiva Labs&apos; word for it.
         </h2>
         <QuoteCard />
       </section>

@@ -71,7 +71,7 @@ export default function BestSellers() {
     <section id="products" className="section bg-white">
       <div ref={scope}>
         <h2 data-reveal className="heading-caps px-4">
-          Lab-verified best sellers
+          Peptiva Labs best sellers
         </h2>
 
         {/* ---- rail ----------------------------------------------------- */}

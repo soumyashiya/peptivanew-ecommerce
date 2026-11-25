@@ -6,6 +6,7 @@ import { CartProvider } from "@/components/CartContext";
 import { AuthProvider } from "@/components/AuthContext";
 import { ToastProvider } from "@/components/Toast";
 import ChatWidgetLoader from "@/components/ChatWidgetLoader";
+import PartnerModal from "@/components/PartnerModal";
 import {
   SITE_URL,
   SITE_NAME,
@@ -87,6 +88,7 @@ export default function RootLayout({
           <AuthProvider>
             <CartProvider>
               <SmoothScroll>{children}</SmoothScroll>
+              <PartnerModal />
               <ChatWidgetLoader />
             </CartProvider>
           </AuthProvider>

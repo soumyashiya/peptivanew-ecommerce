@@ -173,7 +173,7 @@ export default function ContactView() {
       {/* ---- routes ---------------------------------------------------- */}
       <section className="mx-auto -mt-0 w-full max-w-[1200px] px-4 pt-14 lg:pt-16">
         <h2 className="text-center text-[clamp(24px,2.4vw,34px)] font-normal text-black">
-          Find the fastest answer
+          Find the fastest answer from Peptiva Labs
         </h2>
         <div className="mt-10 grid gap-5 md:grid-cols-3">
           {ROUTES.map(({ Icon, title, body, cta, href, topic: t }) => (
@@ -317,7 +317,7 @@ export default function ContactView() {
 
       {/* ---- FAQ ------------------------------------------------------- */}
       <section className="mx-auto mt-24 w-full max-w-[900px] px-4">
-        <h2 className="text-center text-[clamp(26px,2.6vw,38px)] font-normal text-black">Common questions</h2>
+        <h2 className="text-center text-[clamp(26px,2.6vw,38px)] font-normal text-black">Common questions about Peptiva Labs</h2>
         <div className="mt-10 flex flex-col gap-4">
           {FAQ.map((f) => {
             const isOpen = open === f.q;

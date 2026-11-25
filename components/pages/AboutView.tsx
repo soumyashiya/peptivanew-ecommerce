@@ -106,7 +106,7 @@ export default function AboutView() {
         <h1
           className={`text-[clamp(30px,4.4vw,66px)] font-light uppercase leading-[1.2] tracking-[0.01em] ${GRADIENT_TEXT}`}
         >
-          Research that makes sense.
+          Peptiva Labs: research that makes sense.
           <br />
           Material that holds up.
         </h1>

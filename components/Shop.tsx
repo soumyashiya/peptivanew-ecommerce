@@ -262,7 +262,7 @@ function BackedByAnalysis() {
               >
                 <div className="p-8 sm:p-12">
                   <h2 className="text-[clamp(28px,3.2vw,48px)] font-bold uppercase leading-[1.15] text-black">
-                    Backed by real analysis
+                    Peptiva Labs, backed by real analysis
                   </h2>
                   <p className="mt-5 max-w-[440px] text-[17px] leading-[1.7] text-black">
                     Every batch is assayed by Janoshik Analytical before it is listed. Batch codes,
@@ -449,7 +449,7 @@ export default function Shop() {
       {/* ---- 3. bundles carousel ------------------------------------- */}
       <section id="bundles" className="mx-auto mt-24 w-full max-w-[1260px] scroll-mt-28 px-4">
         <h2 className="text-center text-[clamp(26px,2.6vw,38px)] font-normal text-black">
-          Bundles built around your research goals
+          Peptiva Labs bundles built around your research goals
         </h2>
         <div className="mt-10">
           <Rail ariaLabel="Research bundles" gap="gap-4" arrowOffset="-left-6 -right-6" showProgress={false}>
@@ -468,7 +468,7 @@ export default function Shop() {
       {/* ---- 5. lab results ------------------------------------------ */}
       {lab.length > 0 && (
         <section className="mx-auto mt-20 w-full max-w-[1100px] px-4">
-          <h2 className="text-[clamp(24px,2.2vw,32px)] font-normal text-black">Lab results</h2>
+          <h2 className="text-[clamp(24px,2.2vw,32px)] font-normal text-black">Peptiva Labs lab results</h2>
           <div className="mt-8 grid grid-cols-2 gap-8 lg:grid-cols-4">
             {lab.map((p) => {
               const f = labFigure(p)!;

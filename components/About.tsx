@@ -30,7 +30,7 @@ export default function About() {
     <section id="about" className="section bg-white">
       <div ref={scope} className="shell">
         <h2 data-reveal className="heading-caps lg:mb-[50px]">
-          Build your research protocol
+          Build your Peptiva Labs research protocol
         </h2>
 
         {/* Measured: 30px radius, and inset further than the shell so the

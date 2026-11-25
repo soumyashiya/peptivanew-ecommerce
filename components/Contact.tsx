@@ -73,7 +73,7 @@ export function FreeFrom() {
 
           <div data-reveal>
             <h2 className="heading-editorial">
-              Trusted, fully-disclosed formulations
+              Peptiva Labs: fully-disclosed formulations
             </h2>
 
             <p className="mt-4 text-[clamp(18px,1.75vw,25px)] font-light leading-[1.6] text-black">
@@ -135,7 +135,7 @@ export default function Contact() {
             <div data-reveal>
               <p className="eyebrow">Get in touch</p>
               <h2 className="heading-editorial mt-4 max-w-[16ch]">
-                Questions about a batch, an order, or sourcing?
+                Questions for Peptiva Labs about a batch or order?
               </h2>
               <p className="mt-5 max-w-prose lead">
                 A real person reads every message — no ticket queue, no bots.

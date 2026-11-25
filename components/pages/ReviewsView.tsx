@@ -135,7 +135,7 @@ function Promises() {
 
   return (
     <section className="mt-24" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
-      <div className="mx-auto w-[calc(100%-32px)] max-w-[904px] overflow-hidden pb-1 pr-1">
+      <div className="mx-auto w-full max-w-[1170px] px-4"><div className="overflow-hidden pb-1 pr-1">
         <div
           className="flex gap-6 transition-transform duration-base ease-standard"
           style={{ transform: `translateX(calc(${-i} * (100% + 24px)))` }}
@@ -159,11 +159,12 @@ function Promises() {
                 </ul>
               </div>
               <div className="relative min-h-[260px] sm:min-h-[340px]">
-                <Image src={p.img} alt="" fill sizes="(min-width: 640px) 430px, 100vw" className="object-cover" />
+                <Image src={p.img} alt="" fill sizes="(min-width: 640px) 560px, 100vw" className="object-cover" />
               </div>
             </div>
           ))}
         </div>
+      </div>
       </div>
 
       <div className="mt-6 flex justify-center gap-2">
@@ -199,7 +200,7 @@ function Summary() {
   const max = Math.max(1, ...bars.map((b) => b.count));
 
   return (
-    <section className={`mx-auto mt-24 w-[calc(100%-32px)] max-w-[770px] rounded-[18px] border-[2.5px] border-black bg-white px-6 pb-8 pt-6 shadow-[4px_4px_0_#000] sm:px-10`}>
+    <section className={`mx-auto mt-24 w-[calc(100%-32px)] max-w-[1138px] ${HARD} bg-white px-6 pb-8 pt-6 sm:px-10`}>
       <div className="flex justify-center gap-4 sm:justify-start sm:pl-[112px]" role="tablist" aria-label="Rating type">
         {SUMMARY_TABS.map((t, i) => {
           const a = averageRating(REVIEWS.filter((r) => r.kind === t.kind));
@@ -289,7 +290,7 @@ export default function ReviewsView() {
     <div className="bg-white pb-24 pt-32 lg:pt-[150px]">
       <section className="mx-auto w-full max-w-[1170px] px-4">
         <h1 className="text-[clamp(28px,2.6vw,38px)] font-normal leading-tight text-black">
-          Tried, tested and trusted by {REVIEWS.length} verified researchers
+          Peptiva Labs: tried, tested and trusted by {REVIEWS.length} verified researchers
         </h1>
 
         {/* ---- filter pills ---- */}

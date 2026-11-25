@@ -518,7 +518,7 @@ export default function ProductDetail({
 
       <div className="pt-[25px]" style={{ background: band.page }}>
         <div className="pt-16">
-          <CommunityStrip title="Loved by our" sentenceCase background="bg-transparent" />
+          <CommunityStrip title="Loved by the Peptiva Labs" sentenceCase background="bg-transparent" />
         </div>
 
         {/* ================= rating summary ========================== */}
@@ -600,7 +600,7 @@ export default function ProductDetail({
         {compoundRows.length > 0 && (
           <section id="ingredients" className="scroll-mt-28 px-4 py-14">
             <h2 className="text-center text-[clamp(26px,2.6vw,40px)] font-normal text-black">
-              Key compound highlights
+              Peptiva Labs compound highlights
             </h2>
             <div className="mx-auto mt-10 flex max-w-[1180px] flex-wrap justify-center gap-8">
               {compoundRows.map((row) => (
@@ -615,7 +615,7 @@ export default function ProductDetail({
           <section id="analysis" className="scroll-mt-28 py-16" aria-labelledby="analysis-heading">
             <div className="shell">
               <h2 id="analysis-heading" className="heading-caps">
-                Certificate of analysis
+                Peptiva Labs certificate of analysis
               </h2>
               <p className="mx-auto mt-5 max-w-prose text-center lead">
                 Independently tested and verified by Janoshik Analytical.
@@ -760,7 +760,7 @@ export default function ProductDetail({
             <div className="shell">
               <div className="flex flex-wrap items-end justify-between gap-4">
                 <h2 id="related-heading" className="text-[clamp(26px,2.4vw,34px)] font-medium text-black">
-                  We also recommend
+                  More from Peptiva Labs
                 </h2>
                 <Link href="/products" className="link-micro">
                   View all
@@ -1013,7 +1013,7 @@ function ProductFaq({ product }: { product: Product }) {
   return (
     <section id="contents" className="scroll-mt-28 py-16">
       <div className="mx-auto max-w-[900px] px-4">
-        <h2 className="text-center text-[clamp(28px,2.8vw,40px)] font-medium text-black">FAQ</h2>
+        <h2 className="text-center text-[clamp(28px,2.8vw,40px)] font-medium text-black">Peptiva Labs FAQ</h2>
         <label className="mt-8 flex items-center gap-2 border border-grey-300 bg-white px-3">
           <SearchIcon width={15} height={15} className="flex-none text-black" />
           <span className="sr-only">Search questions</span>
@@ -1033,7 +1033,7 @@ function ProductFaq({ product }: { product: Product }) {
         </div>
 
         <h2 id="highlights" className="mt-20 text-center text-[clamp(26px,2.6vw,38px)] font-medium text-black">
-          Everything you need to know
+          Everything you need to know from Peptiva Labs
         </h2>
         <div className="mt-10">
           <Accordion items={more} />
@@ -1059,7 +1059,7 @@ function ProductReviews({ product }: { product: Product }) {
       <div className="mx-auto max-w-[920px] px-4">
         <div className="flex items-center justify-center gap-6">
           <h2 id="reviews-heading" className="text-[18px] italic text-black">
-            Verified customer reviews
+            Verified Peptiva Labs reviews
           </h2>
           {product.rating !== undefined && (
             <span className="flex flex-col items-center">
