@@ -1,4 +1,15 @@
 /** @type {import('next').NextConfig} */
+import { existsSync } from "node:fs";
+import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
+
+// app/api/send-order-confirmation/route.js imports the VPS-only shared-email
+// module from outside the repo. Where that module is absent (Vercel, fresh
+// clones) swap the import for a local no-op so the build still succeeds.
+// On the VPS the real module exists and is used unchanged.
+const ROOT = dirname(fileURLToPath(import.meta.url));
+const SHARED_EMAIL = resolve(ROOT, "app/api/send-order-confirmation", "../../../../../shared-email/order-email.js");
+const EMAIL_FALLBACK = resolve(ROOT, "lib/order-email-fallback.js");
 
 // Upstream User Order service — proxied through Next so browser requests stay
 // same-origin (the service does not send CORS headers for localhost).
@@ -46,6 +57,16 @@ const nextConfig = {
         hostname: "images.unsplash.com",
       },
     ],
+  },
+  webpack(config, { webpack }) {
+    if (!existsSync(SHARED_EMAIL)) {
+      config.plugins.push(
+        new webpack.NormalModuleReplacementPlugin(/shared-email[\\/]order-email\.js$/, (r) => {
+          r.request = EMAIL_FALLBACK;
+        })
+      );
+    }
+    return config;
   },
   experimental: {
     optimizePackageImports: ["gsap"],
